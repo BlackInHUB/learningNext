@@ -5,10 +5,10 @@ export interface HeaderProps {
   children?: React.ReactNode;
 }
 
-export default function Header({}: HeaderProps) {
+export default function Header({ children }: HeaderProps) {
   return (
     <header className="flex items-center justify-between px-10 py-7 border-b border-b-gray-300">
-      <h1 className="text-3xl font-bold text-gray-900">Companies</h1>
+      <h1 className="text-3xl font-bold text-gray-900">{children}</h1>
       <UserBar />
     </header>
   );
