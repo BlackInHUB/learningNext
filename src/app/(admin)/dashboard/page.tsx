@@ -1,11 +1,6 @@
-import ErrorButton from '@/app/components/errorButton';
+import Header from '@/app/components/header';
 import React from 'react';
 
 export default function Page() {
-  return (
-    <main>
-      <h1 className="text-xl mb-5">Dashboard Page</h1>
-      <ErrorButton />
-    </main>
-  );
+  return <Header>Dashboard</Header>;
 }
