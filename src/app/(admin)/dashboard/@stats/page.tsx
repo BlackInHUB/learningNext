@@ -14,7 +14,12 @@ export default async function Page() {
   return (
     <ul className="grid grid-cols-4 gap-5">
       {(Object.keys(labelByStat) as (keyof typeof data)[]).map((key) => (
-        <StatCard key={key} label={labelByStat[key]} counter={data[key]} />
+        <StatCard
+          type="gradient"
+          key={key}
+          label={labelByStat[key]}
+          counter={data[key]}
+        />
       ))}
     </ul>
   );

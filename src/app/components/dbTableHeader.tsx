@@ -6,7 +6,10 @@ export interface DbTableHeaderProps {
   align?: 'center' | 'right' | 'left';
 }
 
-export default function DbTableHeader({ children, align }: DbTableHeaderProps) {
+export default function DbTableHeader({
+  children,
+  align = 'center',
+}: DbTableHeaderProps) {
   return (
     <th
       className={clsx(

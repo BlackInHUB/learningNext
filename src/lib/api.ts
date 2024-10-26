@@ -20,3 +20,48 @@ export const getSales = () => {
   }
   return Promise.resolve(sales);
 };
+
+export const getCategories = () => {
+  return Promise.resolve([
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 4,
+    },
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 8,
+    },
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 26,
+    },
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 1,
+    },
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 37,
+    },
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 22,
+    },
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 4,
+    },
+    {
+      categoryId: 1,
+      category: 'Products',
+      count: 12,
+    },
+  ]);
+};
