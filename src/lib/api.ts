@@ -65,3 +65,28 @@ export const getCategories = () => {
     },
   ]);
 };
+
+export const getCountries = () => {
+  return Promise.resolve([
+    { countryId: 1, country: 'Canada', count: 4 },
+    { countryId: 2, country: 'USA', count: 4 },
+    { countryId: 3, country: 'Italia', count: 2 },
+    { countryId: 4, country: 'Ukraine', count: 2 },
+    { countryId: 5, country: 'Spain', count: 2 },
+  ]);
+};
+
+export const getPromotions = () => {
+  const items = [];
+
+  for (let i = 0; i < 7; i++) {
+    items.push({
+      promotionId: i + 1,
+      companyName: 'Costco Wholesale',
+      promotionName: 'Lorem ipsum dolor ',
+      discount: Math.floor(Math.random() * (80 - 5) + 5),
+    });
+  }
+
+  return Promise.resolve(items);
+};
